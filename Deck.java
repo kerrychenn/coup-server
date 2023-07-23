@@ -1,10 +1,10 @@
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 
 public class Deck {
+    // Queue to represent the deck
+    // The top of the deck is the head of the linked list.
+    // The bottom of the deck is the tail of the linked list.
     private LinkedList<Influence> deck = null;
 
     public Deck() {
@@ -21,12 +21,10 @@ public class Deck {
     }
 
     public Influence drawCard() {
-        return Influence.DUKE;
+        return deck.pop();
     }
 
-    public void addCard() {
-
+    public void returnCard(Influence card) {
+        deck.add(card);
     }
-
-    
 }

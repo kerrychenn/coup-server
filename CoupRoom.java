@@ -1,15 +1,11 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 class CoupRoom{
     private List<Player> player = new ArrayList<Player>();
-    private Map<Player, Integer> playerCoin = new HashMap<Player, Integer>();
-
     
     public CoupRoom() {
-
+        
     }
 
 
